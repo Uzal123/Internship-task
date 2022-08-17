@@ -1,6 +1,8 @@
 # Dazzie
 Live Demo Link : https://dazziieltd.netlify.app
 
+HomePage and EditProduct Page is Available. Other Pages are under Construction.
+
 # Screenshots
 
 
