@@ -1,7 +1,7 @@
 import React from "react";
-import TextInput from "../Form/TextInput";
-import TextareaInput from "../Form/TextareaInput";
-import DropdownInput from "../Form/DropdownInput";
+import TextInput from "../../Components/Form/TextInput";
+import TextareaInput from "../../Components/Form/TextareaInput";
+import DropdownInput from "../../Components/Form/DropdownInput";
 import { useEffect } from "react";
 
 const EditProduct = () => {

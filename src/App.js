@@ -1,12 +1,12 @@
 import Navbar from "./Components/Navbar/Navbar";
 import Sidebar from "./Components/Sidebar/Sidebar";
-import Dashboard from "./Components/Dashboard/Dashboard";
+import Dashboard from "./Routes/Dashboard/Dashboard";
 import {
   BrowserRouter as Router,
   Routes,
   Route,
 } from "react-router-dom";
-import EditProduct from "./Components/EditProduct/EditProduct";
+import EditProduct from "./Routes/EditProduct/EditProduct";
 
 
 
