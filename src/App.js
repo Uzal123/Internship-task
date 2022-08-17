@@ -8,10 +8,13 @@ import {
 } from "react-router-dom";
 import EditProduct from "./Components/EditProduct/EditProduct";
 
+
+
 function App() {
   return (
     <Router>
       <div className="">
+        <title>Dazziie</title>
         <Navbar />
         <Sidebar />
         <Routes>

@@ -1,8 +1,11 @@
-import React from "react";
+import React,{useEffect} from "react";
 import SearchBar from "../Form/SearchBar";
 import Hero from "./FoodCard";
 
 const Dashboard = () => {
+    useEffect(() => {
+        document.title = "Dazzie";
+    }, []);
   return (
     <div className="main-container">
       <section className="dashboard p-6 relative">

@@ -2,8 +2,12 @@ import React from "react";
 import TextInput from "../Form/TextInput";
 import TextareaInput from "../Form/TextareaInput";
 import DropdownInput from "../Form/DropdownInput";
+import {useEffect} from "react";
 
 const EditProduct = () => {
+    useEffect(() => {
+        document.title = "Edit Product";
+    }, []);
   return (
     <div className="main-container">
       <div className=" text-2xl font-customBlack font-bold pb-4">
