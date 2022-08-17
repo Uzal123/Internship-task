@@ -1,11 +1,13 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import SearchBar from "../Form/SearchBar";
 import Hero from "./FoodCard";
+import Food from "../../Assets/Data/Food";
+import Drinks from "../../Assets/Data/Drinks";
 
 const Dashboard = () => {
-    useEffect(() => {
-        document.title = "Dazzie";
-    }, []);
+  useEffect(() => {
+    document.title = "Dazzie";
+  }, []);
   return (
     <div className="main-container">
       <section className="dashboard p-6 relative">
@@ -32,17 +34,15 @@ const Dashboard = () => {
         <div className="h-full mt-24">
           <div className="text-2xl font-bold py-6"> Food</div>
           <div className="grid grid-cols-3 gap-6">
-            <Hero title="Momo" price="$22" />
-            <Hero title="Biryani" price="$22" />
-            <Hero title="Rajma" price="$22" />
-            <Hero title="Biryani" price="$22" />
-            <Hero title="Momo" price="$22" />
+            {Food.map((d, i) => (
+              <Hero title={d.name} price={d.price} key={i} />
+            ))}
           </div>
           <div className="text-2xl font-bold py-6"> Drinks</div>
           <div className="grid grid-cols-3 gap-6">
-            <Hero title="Momo" price="$22" />
-            <Hero title="Biryani" price="$22" />
-            <Hero title="Rajma" price="$22" />
+            {Drinks.map((d, i) => (
+              <Hero title={d.name} price={d.price} key={i} />
+            ))}
           </div>
         </div>
       </section>
