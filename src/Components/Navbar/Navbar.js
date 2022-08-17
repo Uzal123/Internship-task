@@ -12,10 +12,10 @@ const Navbar = () => {
       </div>
 
       <div className="flex items-center gap-4">
-        <Notification className="mx-6" />
-        <div className="bg-darkGray rounded-full h-10 w-10"></div>
+        <Notification className="mx-6 cursor-pointer" />
+        <div className="bg-darkGray rounded-full h-10 w-10 cursor-pointer"></div>
         <div className="w-32">
-          <h2 className="font-bold text-base">Sumanto</h2>
+          <h2 className="font-bold text-base cursor-pointer">Sumanto</h2>
           <p className="text-sm text-darkGray">Cashier</p>
         </div>
       </div>
