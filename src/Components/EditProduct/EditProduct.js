@@ -2,12 +2,12 @@ import React from "react";
 import TextInput from "../Form/TextInput";
 import TextareaInput from "../Form/TextareaInput";
 import DropdownInput from "../Form/DropdownInput";
-import {useEffect} from "react";
+import { useEffect } from "react";
 
 const EditProduct = () => {
-    useEffect(() => {
-        document.title = "Edit Product";
-    }, []);
+  useEffect(() => {
+    document.title = "Edit Product";
+  }, []);
   return (
     <div className="main-container">
       <div className=" text-2xl font-customBlack font-bold pb-4">
@@ -22,16 +22,20 @@ const EditProduct = () => {
               <h2 className="font-bold text-customBlack py-4">
                 Select your product picture
               </h2>
-              <button className="bg-customPurple text-white py-1.5 px-4 rounded-md">
-                Browse
-              </button>
+              <div>
+                <button className="bg-customPurple text-white py-1.5 px-6 rounded-md">
+                  Browse
+                </button>
+              </div>
             </div>
           </div>
           <TextInput label="Product Name" placeholder="Cuppucino" type="text" />
           <DropdownInput label="Category" />
           <TextInput label="Price" placeholder="$5" type="text" />
-          <TextareaInput label="Description" placeholder="A cappuccino is an espresso-based coffee drink that originated in Italy, and is traditionally prepared with steamed milk foam (microfoam)"/>
-          
+          <TextareaInput
+            label="Description"
+            placeholder="A cappuccino is an espresso-based coffee drink that originated in Italy, and is traditionally prepared with steamed milk foam (microfoam)"
+          />
         </form>
       </section>
       <div className="py-4 flex gap-4">

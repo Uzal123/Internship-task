@@ -7,8 +7,9 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="flex items-center gap-2">
-        <div className="bg-gray-400 rounded-md h-10 w-10"></div>
-        <h1 className="text-2xl font-bold">Dazzie</h1>
+
+        <div className="bg-gray-400 rounded-md h-10 w-10 cursor-pointer"></div>
+        <a href="/" className="text-2xl font-bold cursor-pointer">Dazzie</a>
       </div>
 
       <div className="flex items-center gap-4">
